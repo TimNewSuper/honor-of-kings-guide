@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>英雄攻略 - 王者荣耀攻略站</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">王者<span>攻略站</span></div>
+      <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="heroes.html" class="active">英雄攻略</a></li>
+        <li><a href="beginner.html">新手指南</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 页面标题 -->
+  <section class="hero-banner" style="padding: 60px 0;">
+    <div class="container">
+      <h1>英雄攻略大全</h1>
+      <p>选择你想了解的英雄，查看详细攻略</p>
+    </div>
+  </section>
+
+  <!-- 筛选标签 -->
+  <section class="section">
+    <div class="container">
+      <div class="filter-tags">
+        <button class="filter-tag active" onclick="filterHeroes('all')">全部</button>
+        <button class="filter-tag" onclick="filterHeroes('战士')">战士</button>
+        <button class="filter-tag" onclick="filterHeroes('法师')">法师</button>
+        <button class="filter-tag" onclick="filterHeroes('射手')">射手</button>
+        <button class="filter-tag" onclick="filterHeroes('刺客')">刺客</button>
+        <button class="filter-tag" onclick="filterHeroes('坦克')">坦克</button>
+        <button class="filter-tag" onclick="filterHeroes('辅助')">辅助</button>
+      </div>
+
+      <!-- 英雄列表 -->
+      <div class="grid grid-4" id="heroList">
+        <!-- 战士 -->
+        <a href="hero-detail.html?hero=亚瑟" class="card hero-card" data-role="战士">
+          <div class="card-image">⚔️</div>
+          <div class="card-content">
+            <h3 class="card-title">亚瑟</h3>
+            <p class="card-desc">经典战士，新手首选</p>
+            <span class="hero-role">战士</span>
+          </div>
+        </a>
+        <a href="hero-detail.html?hero=吕布" class="card hero-card" data-role="战士">
+          <div class="card-image">🗡️</div>
+          <div class="card-content">
+            <h3 class="card-title">吕布</h3>
+            <p class="card-desc">真实伤害，前排杀手</p>
+            <span class="hero-role">战士</span>
+          </div>
+        </a>
+        <a href="hero-detail.html?hero=花木兰" class="card hero-card" data-role="战士">
+          <div class="card-image">🌸</div>
+          <div class="card-content">
+            <h3 class="card-title">花木兰</h3>
+            <p class="card-desc">双形态切换，操作上限高</p>
+            <span class="hero-role">战士</span>
+          </div>
+        </a>
+        <a href="hero-detail.html?hero=关羽" class="card hero-card" data-role="战士">
+          <div class="card-image">🐴</div>
+          <div class="card-content">
+            <h3 class="card-title">关羽</h3>
+            <p class="card-desc">高机动性，团战搅局者</p>
+            <span class="hero-role">战士</span>
+          </div>
+        </a>
+
+        <!-- 法师 -->
+        <a href="hero-detail.html?hero=安琪拉" class="card hero-card" data-role="法师">
+          <div class="card-image">🔮</div>
+          <div class="card-content">
+            <h3 class="card-title">安琪拉</h3>
+            <p class="card-desc">高爆发法师，一套秒人</p>
+            <span class="hero-role">法师</span>
+          </div>
+        </a>
+        <a href="hero-detail.html?hero=妲己" class="card hero-card" data-role="法师">
+          <div class="card-image">🦊</div>
+          <div class="card-content">
+            <h3 class="card-title">妲己</h3>
+            <p class="card-desc">控制爆发，新手法师首选</p>
+            <span class="hero-role">法师</span>
+          </div>
+        </a>
+        <a href="hero-detail.html?hero=貂蝉" class="card hero-card" data-role="法师">
+          <div class="card-image">💃</div>
+          <div class="card-content">
+            <h3 class="card-title">貂蝉</h3>
+            <p class="card-desc">持续输出，团战收割</p>
+            <span class="hero-role">法师</span>
+          </div>
+        </a>
+        <a href="hero-detail.html?hero=诸葛亮" class="card hero-card" data-role="法师">
+          <div class="card-image">🪶</div>
+          <div class="card-content">
+            <h3 class="card-title">诸葛亮</h3>
+            <p class="card-desc">灵活法师，多段位移</p>
+            <span class="hero-role">法师</span>
+          </div>
+        </a>
+
+        <!-- 射手 -->
+        <a href="hero-detail.html?hero=鲁班七号" class="card hero-card" data-role="射手">
+          <div class="card-image">🤖</div>
+          <div class="card-content">
+            <h3 class="card-title">鲁班七号</h3>
+            <p class="card-desc">高输出射手，团战收割</p>
+            <span class="hero-role">射手</span>
+          </div>
+        </a>
+        <a href="hero-detail.html?hero=后羿" class="card hero-card" data-role="射手">
+          <div class="card-image">🏹</div>
+          <div class="card-content">
+            <h3 class="card-title">后羿</h3>
+            <p class="card-desc">持续输出，团战利器</p>
+            <span class="hero-role">射手</span>
+          </div>
+        </a>
+        <a href="hero-detail.html?hero=孙尚香" class="card hero-card" data-role="射手">
+          <div class="card-image">💥</div>
+          <div class="card-content">
+            <h3 class="card-title">孙尚香</h3>
+            <p class="card-desc">灵活射手，爆发输出</p>
+            <span class="hero-role">射手</span>
+          </div>
+        </a>
+        <a href="hero-detail.html?hero=马可波罗" class="card hero-card" data-role="射手">
+          <div class="card-image">🔫</div>
+          <div class="card-content">
+            <h3 class="card-title">马可波罗</h3>
+            <p class="card-desc">真伤射手，坦克克星</p>
+            <span class="hero-role">射手</span>
+          </div>
+        </a>
+
+        <!-- 刺客 -->
+        <a href="hero-detail.html?hero=孙悟空" class="card hero-card" data-role="刺客">
+          <div class="card-image">🐒</div>
+          <div class="card-content">
+            <h3 class="card-title">孙悟空</h3>
+            <p class="card-desc">灵活刺客，切后排利器</p>
+            <span class="hero-role">刺客</span>
+          </div>
+        </a>
+        <a href="hero-detail.html?hero=李白" class="card hero-card" data-role="刺客">
+          <div class="card-image">⚔️</div>
+          <div class="card-content">
+            <h3 class="card-title">李白</h3>
+            <p class="card-desc">飘逸剑客，秀操作必备</p>
+            <span class="hero-role">刺客</span>
+          </div>
+        </a>
+        <a href="hero-detail.html?hero=韩信" class="card hero-card" data-role="刺客">
+          <div class="card-image">🗡️</div>
+          <div class="card-content">
+            <h3 class="card-title">韩信</h3>
+            <p class="card-desc">高机动打野，节奏大师</p>
+            <span class="hero-role">刺客</span>
+          </div>
+        </a>
+        <a href="hero-detail.html?hero=兰陵王" class="card hero-card" data-role="刺客">
+          <div class="card-image">👤</div>
+          <div class="card-content">
+            <h3 class="card-title">兰陵王</h3>
+            <p class="card-desc">隐身刺客，脆皮噩梦</p>
+            <span class="hero-role">刺客</span>
+          </div>
+        </a>
+
+        <!-- 坦克 -->
+        <a href="hero-detail.html?hero=张飞" class="card hero-card" data-role="坦克">
+          <div class="card-image">🛡️</div>
+          <div class="card-content">
+            <h3 class="card-title">张飞</h3>
+            <p class="card-desc">强力坦克，保护队友</p>
+            <span class="hero-role">坦克</span>
+          </div>
+        </a>
+        <a href="hero-detail.html?hero=程咬金" class="card hero-card" data-role="坦克">
+          <div class="card-image">🪓</div>
+          <div class="card-content">
+            <h3 class="card-title">程咬金</h3>
+            <p class="card-desc">回血坦克，抗压能力强</p>
+            <span class="hero-role">坦克</span>
+          </div>
+        </a>
+        <a href="hero-detail.html?hero=白起" class="card hero-card" data-role="坦克">
+          <div class="card-image">⚔️</div>
+          <div class="card-content">
+            <h3 class="card-title">白起</h3>
+            <p class="card-desc">团控坦克，开团利器</p>
+            <span class="hero-role">坦克</span>
+          </div>
+        </a>
+        <a href="hero-detail.html?hero=廉颇" class="card hero-card" data-role="坦克">
+          <div class="card-image">🗿</div>
+          <div class="card-content">
+            <h3 class="card-title">廉颇</h3>
+            <p class="card-desc">控制坦克，前排担当</p>
+            <span class="hero-role">坦克</span>
+          </div>
+        </a>
+
+        <!-- 辅助 -->
+        <a href="hero-detail.html?hero=蔡文姬" class="card hero-card" data-role="辅助">
+          <div class="card-image">🎵</div>
+          <div class="card-content">
+            <h3 class="card-title">蔡文姬</h3>
+            <p class="card-desc">奶妈辅助，续航保障</p>
+            <span class="hero-role">辅助</span>
+          </div>
+        </a>
+        <a href="hero-detail.html?hero=大乔" class="card hero-card" data-role="辅助">
+          <div class="card-image">🌊</div>
+          <div class="card-content">
+            <h3 class="card-title">大乔</h3>
+            <p class="card-desc">传送辅助，战术多变</p>
+            <span class="hero-role">辅助</span>
+          </div>
+        </a>
+        <a href="hero-detail.html?hero=瑶" class="card hero-card" data-role="辅助">
+          <div class="card-image">🧚</div>
+          <div class="card-content">
+            <h3 class="card-title">瑶</h3>
+            <p class="card-desc">附身辅助，新手友好</p>
+            <span class="hero-role">辅助</span>
+          </div>
+        </a>
+        <a href="hero-detail.html?hero=鬼谷子" class="card hero-card" data-role="辅助">
+          <div class="card-image">👁️</div>
+          <div class="card-content">
+            <h3 class="card-title">鬼谷子</h3>
+            <p class="card-desc">隐身辅助，开团专家</p>
+            <span class="hero-role">辅助</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 王者荣耀攻略站 - 非官方玩家攻略网站</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

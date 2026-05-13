@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>英雄详情 - 王者荣耀攻略站</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">王者<span>攻略站</span></div>
+      <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="heroes.html" class="active">英雄攻略</a></li>
+        <li><a href="beginner.html">新手指南</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 内容区 -->
+  <section class="section">
+    <div class="container">
+      <!-- 返回按钮 -->
+      <a href="heroes.html" class="back-btn">← 返回英雄列表</a>
+
+      <!-- 英雄头部信息 -->
+      <div class="detail-header">
+        <div class="detail-image" id="heroIcon">⚔️</div>
+        <div class="detail-info">
+          <h1 class="detail-title" id="heroName">亚瑟</h1>
+          <div class="detail-meta">
+            <span class="meta-item" id="heroRole">战士</span>
+            <span class="meta-item" id="heroDifficulty">难度：简单</span>
+            <span class="meta-item" id="heroLane">位置：对抗路</span>
+          </div>
+          <p class="detail-desc" id="heroDesc">
+            亚瑟是一名经典的战士英雄，拥有较高的生存能力和持续输出能力。技能简单易懂，非常适合新手玩家使用。
+            被动技能提供持续回复，让他在对线期有很强的续航能力。
+          </p>
+        </div>
+      </div>
+
+      <!-- 技能介绍 -->
+      <div class="section">
+        <h2 class="section-title">技能介绍</h2>
+        <div class="skills-grid" id="skillsList">
+          <div class="skill-card">
+            <h4 class="skill-name">被动 - 圣光守护</h4>
+            <p class="card-desc">亚瑟获得圣光守护，每2秒回复自身最大生命值1%</p>
+          </div>
+          <div class="skill-card">
+            <h4 class="skill-name">一技能 - 誓约之盾</h4>
+            <p class="card-desc">亚瑟举盾冲锋，增加移速并强化下一次普攻，造成沉默效果</p>
+          </div>
+          <div class="skill-card">
+            <h4 class="skill-name">二技能 - 回旋打击</h4>
+            <p class="card-desc">亚瑟召唤圣盾围绕自身旋转，对周围敌人持续造成伤害</p>
+          </div>
+          <div class="skill-card">
+            <h4 class="skill-name">大招 - 圣剑裁决</h4>
+            <p class="card-desc">亚瑟跳跃至目标位置，对范围内敌人造成伤害并击飞</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 出装推荐 -->
+      <div class="section">
+        <h2 class="section-title">出装推荐</h2>
+        <div class="build-section">
+          <h3 style="color: var(--accent-color); margin-bottom: 15px;">推荐出装</h3>
+          <div class="build-items" id="buildItems">
+            <div class="build-item" title="红莲斗篷">🔥</div>
+            <div class="build-item" title="抵抗之靴">👢</div>
+            <div class="build-item" title="暗影战斧">🪓</div>
+            <div class="build-item" title="冰痕之握">❄️</div>
+            <div class="build-item" title="魔女斗篷">🧙</div>
+            <div class="build-item" title="不祥征兆">🛡️</div>
+          </div>
+          <p class="card-desc" style="margin-top: 15px;">出装思路：以肉装为主，兼顾冷却缩减，提升生存能力和技能释放频率</p>
+        </div>
+      </div>
+
+      <!-- 铭文推荐 -->
+      <div class="section">
+        <h2 class="section-title">铭文推荐</h2>
+        <div class="build-section">
+          <h3 style="color: var(--accent-color); margin-bottom: 15px;">推荐铭文</h3>
+          <div class="build-items">
+            <div class="build-item" title="异变 x10">📗</div>
+            <div class="build-item" title="鹰眼 x10">📘</div>
+            <div class="build-item" title="隐匿 x10">📙</div>
+          </div>
+          <p class="card-desc" style="margin-top: 15px;">铭文属性：物理攻击 +29，物理穿透 +100，移速 +10%</p>
+        </div>
+      </div>
+
+      <!-- 实战技巧 -->
+      <div class="section">
+        <h2 class="section-title">实战技巧</h2>
+        <div class="guide-list">
+          <div class="guide-item">
+            <h3>对线技巧</h3>
+            <p>利用被动回复持续消耗对手，一技能沉默后接二技能打出连招伤害。注意保持兵线优势，适时支援队友。</p>
+          </div>
+          <div class="guide-item">
+            <h3>团战思路</h3>
+            <p>团战时利用大招先手开团，跳入敌方后排吸收伤害。一技能优先沉默敌方核心输出，为队友创造输出空间。</p>
+          </div>
+          <div class="guide-item">
+            <h3>连招技巧</h3>
+            <p>基础连招：一技能加速 → 普攻沉默 → 二技能持续伤害 → 大招收割。进阶可在草丛蹲人，一技能起手打出沉默后直接大招。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 王者荣耀攻略站 - 非官方玩家攻略网站</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // 根据URL参数加载英雄数据
+    document.addEventListener('DOMContentLoaded', function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const heroName = urlParams.get('hero');
+      if (heroName) {
+        loadHeroData(heroName);
+      }
+    });
+  </script>
+</body>
+</html>

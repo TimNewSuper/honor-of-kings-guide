@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新手指南 - 王者荣耀攻略站</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">王者<span>攻略站</span></div>
+      <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="heroes.html">英雄攻略</a></li>
+        <li><a href="beginner.html" class="active">新手指南</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 页面标题 -->
+  <section class="hero-banner" style="padding: 60px 0;">
+    <div class="container">
+      <h1>新手指南</h1>
+      <p>从零开始，快速上手王者荣耀</p>
+    </div>
+  </section>
+
+  <!-- 游戏基础 -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">游戏基础</h2>
+      <div class="guide-list">
+        <div class="guide-item">
+          <h3>🎮 游戏简介</h3>
+          <p>王者荣耀是一款5V5多人在线竞技游戏（MOBA）。两支队伍各5名玩家，选择不同英雄进行对战，目标是摧毁敌方基地（水晶）。游戏节奏快，单局约15-20分钟，非常适合碎片时间娱乐。</p>
+        </div>
+        <div class="guide-item">
+          <h3>🎯 游戏目标</h3>
+          <p>最终目标是摧毁敌方水晶基地。要到达水晶，需要先摧毁防御塔。每条兵线有3座防御塔和2座水晶塔，摧毁所有塔后才能攻击基地水晶。同时需要保护己方防御塔不被摧毁。</p>
+        </div>
+        <div class="guide-item">
+          <h3>💰 经济来源</h3>
+          <p><strong>金币获取：</strong>击杀小兵、野怪、敌方英雄、推塔都能获得金币。金币用于购买装备，提升英雄属性。前期稳定补兵是积累经济的关键。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 地图介绍 -->
+  <section class="section" style="background: var(--background-card);">
+    <div class="container">
+      <h2 class="section-title">地图与模式</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <div class="card-content">
+            <h3 class="card-title">🗺️ 经典5V5地图</h3>
+            <p class="card-desc"><strong>三条兵线：</strong>对抗路（上路）、中路、发育路（下路）<br><br>
+            <strong>野区：</strong>分为红蓝两片野区，包含多种野怪<br><br>
+            <strong>关键野怪：</strong><br>
+            • 暴君（小龙）- 提供团队增益<br>
+            • 主宰（大龙）- 强化兵线<br>
+            • 红蓝BUFF - 提供特殊效果</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h3 class="card-title">🎮 其他游戏模式</h3>
+            <p class="card-desc"><strong>排位赛：</strong>竞技模式，有段位系统<br><br>
+            <strong>匹配赛：</strong>休闲模式，练习英雄<br><br>
+            <strong>娱乐模式：</strong><br>
+            • 无限乱斗 - 技能无CD<br>
+            • 墨家机关道 - 单挑模式<br>
+            • 梦境大乱斗 - 随机英雄<br>
+            • 人机对战 - 练习模式</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 英雄定位 -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">英雄定位介绍</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="card-image" style="background: linear-gradient(135deg, #e74c3c, #c0392b);">⚔️</div>
+          <div class="card-content">
+            <h3 class="card-title">战士</h3>
+            <p class="card-desc">近战英雄，攻守兼备。通常走对抗路，既能输出又有一定坦度。适合喜欢近身肉搏的玩家。</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image" style="background: linear-gradient(135deg, #3498db, #2980b9);">🔮</div>
+          <div class="card-content">
+            <h3 class="card-title">法师</h3>
+            <p class="card-desc">远程魔法输出，技能伤害高。通常走中路，团战时提供AOE伤害和控制。血量较薄需要注意站位。</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image" style="background: linear-gradient(135deg, #2ecc71, #27ae60);">🏹</div>
+          <div class="card-content">
+            <h3 class="card-title">射手</h3>
+            <p class="card-desc">远程物理输出，后期伤害爆炸。通常走发育路，需要前期稳定发育。团战时站在后排持续输出。</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image" style="background: linear-gradient(135deg, #9b59b6, #8e44ad);">🗡️</div>
+          <div class="card-content">
+            <h3 class="card-title">刺客</h3>
+            <p class="card-desc">高爆发近战，擅长切入后排。通常打野，通过抓人建立优势。操作难度较高，需要把握时机。</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image" style="background: linear-gradient(135deg, #f39c12, #d35400);">🛡️</div>
+          <div class="card-content">
+            <h3 class="card-title">坦克</h3>
+            <p class="card-desc">前排肉盾，吸收伤害保护队友。控制技能多，团战时负责开团和保护后排。生存能力强但输出较低。</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image" style="background: linear-gradient(135deg, #1abc9c, #16a085);">🎵</div>
+          <div class="card-content">
+            <h3 class="card-title">辅助</h3>
+            <p class="card-desc">保护队友，提供增益或控制。通常和射手走发育路，帮助队友发育。视野控制和游走支援很重要。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 操作技巧 -->
+  <section class="section" style="background: var(--background-card);">
+    <div class="container">
+      <h2 class="section-title">操作技巧入门</h2>
+      <div class="guide-list">
+        <div class="guide-item">
+          <h3>📱 基础操作</h3>
+          <p><strong>移动：</strong>左侧虚拟摇杆控制移动方向<br>
+          <strong>攻击：</strong>右侧技能按钮释放技能，普攻按钮自动攻击最近目标<br>
+          <strong>技能释放：</strong>点击技能按钮后选择方向或目标释放<br>
+          <strong>召唤师技能：</strong>闪现、治疗、惩戒等，根据英雄选择</p>
+        </div>
+        <div class="guide-item">
+          <h3>🎯 补兵技巧</h3>
+          <p>小兵残血时击杀可获得全额金币。远程英雄注意普攻节奏，近战英雄注意走位接近残血小兵。前期补兵是经济来源的关键，尽量保证每个小兵都能补到。</p>
+        </div>
+        <div class="guide-item">
+          <h3>👀 视野意识</h3>
+          <p>注意小地图，观察敌方英雄位置。如果敌方英雄消失，可能是来抓你了。草丛可以隐藏视野，经过草丛时要小心。辅助和打野要做好视野控制。</p>
+        </div>
+        <div class="guide-item">
+          <h3>🏃 走位技巧</h3>
+          <p>不要站在原地不动，持续移动让敌人难以命中技能。利用草丛进行视野博弈。对线时注意与敌方保持安全距离，被抓时及时撤退。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 常见问题 -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">常见问题</h2>
+      <div class="guide-list">
+        <div class="guide-item">
+          <h3>❓ 新手应该先玩什么英雄？</h3>
+          <p>推荐新手使用：<strong>亚瑟</strong>（战士，简单易上手）、<strong>妲己</strong>（法师，控制稳定）、<strong>后羿</strong>（射手，输出稳定）、<strong>蔡文姬</strong>（辅助，保护队友）。这些英雄操作简单，容易理解游戏机制。</p>
+        </div>
+        <div class="guide-item">
+          <h3>❓ 铭文怎么搭配？</h3>
+          <p>铭文前期不用太纠结，系统有推荐铭文可以一键装配。随着游戏深入，再根据常玩英雄针对性搭配。优先升级通用铭文，如物理攻击、法术攻击、生命值等基础属性铭文。</p>
+        </div>
+        <div class="guide-item">
+          <h3>❓ 怎么快速提升段位？</h3>
+          <p>1. 专精2-3个英雄，熟练掌握技能和连招<br>
+          2. 多看小地图，提高意识<br>
+          3. 学会配合队友，不要单打独斗<br>
+          4. 保持良好心态，连输时休息一下<br>
+          5. 观看高手直播学习技巧</p>
+        </div>
+        <div class="guide-item">
+          <h3>❓ 氪金会影响游戏平衡吗？</h3>
+          <p>王者荣耀是公平竞技游戏，付费内容主要是皮肤（外观）和铭文。铭文可以通过游戏内获取，不影响英雄属性平衡。皮肤只有外观效果，不提供额外属性加成。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 王者荣耀攻略站 - 非官方玩家攻略网站</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
